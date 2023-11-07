@@ -1,0 +1,90 @@
+.navbar {
+    overflow: hidden;
+    background-color: #0bb79d; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; 
+    position: fixed
+
+}
+
+
+.navbar a.home {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none; 
+}
+
+
+.navbar a.login {
+    float: right; 
+    display: block; 
+    color: white; 
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none; 
+}
+
+/* Hover effect */
+.navbar a:hover {
+    background-color: #d8cb12;
+    color: white; 
+}
+
+footer {
+    background-color: #12d8ba;
+    color: #fff;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+  }
+  
+  .social-icons img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+  }
+  
