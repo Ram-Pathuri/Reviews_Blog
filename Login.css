@@ -11,8 +11,12 @@ body {
     margin: 0;
     padding: 0;
     color:#12d8ba; 
-    text-decoration: none;
 }
+
+a
+{
+    text-decoration: none;
+}  
 
 
 

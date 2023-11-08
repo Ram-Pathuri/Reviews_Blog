@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+    <title>Into Page</title>
    
 </head>
 <body>
@@ -37,7 +37,8 @@
 
 <!-- footer starts -->
 <footer>
-    <div class="column">
+    
+<div class="column">
         <h3>Get to know us</h3>
         <ul>
             <li><a href="Sorry.html">Carrers</a></li>
@@ -66,8 +67,8 @@
     
         </div>
     </div>
+   
 </footer>
 
 </body>
-
 </html>

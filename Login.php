@@ -9,19 +9,48 @@
 </head>
 <body>
 <!-- The navigation bar -->
+<?php
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST')
+ {
+    include 'connection.php';
+
+   
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+   
+
+    $check_email_query = "SELECT * FROM reg_info WHERE email='$email' AND password='$password'";
+    $result_email_query = mysqli_query($con, $check_email_query);
+
+    if (mysqli_num_rows($result_email_query) > 0) {
+     
+        header("Location: home.php");
+
+    } else
+    {
+        echo 'Email Wont xists exists';
+
+        
+       
+    }
+      
+}
+?>
+
 
 <div class="login-container">
     <h2>Login</h2>
-    <form id="login-form">
+    <form id="login-form" action="Login.php" method="post">
         <div class="form-group">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
         </div>
         <div class="form-group">
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
         </div>
-        <button type="submit" class="login-button">Login
+        <button type="submit" class="login-button" name="Login" value="login">Login
            
         </button>
         <br>
@@ -29,7 +58,7 @@
         <br>
         or
         <br>
-        <a href="Registration.php"> New user </a>
+        <a href="Registration.php" > New user </a>
       
     </form>
 </div>
