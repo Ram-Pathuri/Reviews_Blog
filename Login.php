@@ -10,7 +10,7 @@
 <body>
 <!-- The navigation bar -->
 <?php
-
+session_start();
 if ($_SERVER['REQUEST_METHOD'] == 'POST')
  {
     include 'connection.php';
@@ -18,24 +18,41 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
    
     $email = $_POST['email'];
     $password = $_POST['password'];
-   
+  
 
     $check_email_query = "SELECT * FROM reg_info WHERE email='$email' AND password='$password'";
     $result_email_query = mysqli_query($con, $check_email_query);
 
     if (mysqli_num_rows($result_email_query) > 0) {
      
+    
+        $sql1 = "INSERT INTO `login_act` (`Login-time`, `email`) VALUES (NULL, '$email')";
+        $result_email_query1 = mysqli_query($con, $sql1);
         header("Location: home.php");
 
-    } else
+    }
+
+     else
     {
         echo 'Email Wont xists exists';
 
         
        
     }
+
+    $_SESSION["email"] = $email;
+    $email=$_SESSION["email"];
+    $sql = "SELECT * FROM  reg_info where email='$email'" ;
+    $result = mysqli_query($con, $sql);
+
+ if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+   $_SESSION['name']= $row["username"];
+  }
       
 }
+ }
 ?>
 
 
