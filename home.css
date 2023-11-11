@@ -1,5 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+   
   }
   
   .navbar {
@@ -67,4 +68,124 @@ body {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  .search-container {
+    display: flex; /* Display children elements (search bar and button) in a row */
+    align-items: center; /* Align items vertically in the center */
+  }
+
+  .search-bar {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+
+  .search-button {
+    background-color:#12d8ba;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px; /* Add margin to separate the search bar and button */
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .card h2 {
+    color: #333;
+  }
+
+  .card p {
+    color: #666;
+  }
+
+  .card img {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+    font-family: 'Baloo Paaji 2', cursive;
+  }
+
+
+
+  footer {
+    background-color: #12d8ba;
+    color: #fff;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  .column {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+  }
+  
+  .social-icons img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+  }
+  .column {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: 10px;
+  }
+  
   
