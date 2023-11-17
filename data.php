@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="data.css">
   <title>Beautiful Form</title>
 </head>
 <body>
@@ -16,7 +16,9 @@
 
     <label for="message">Message:</label>
     <textarea id="message" name="message" rows="4" required></textarea>
-
+    <label for="image">Select Image:</label>
+    <input type="file" name="image" id="image" accept="image/*">
+    
     <input type="submit" value="Submit">
   </form>
 </body>
